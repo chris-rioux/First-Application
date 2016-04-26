@@ -18,8 +18,8 @@ public class KittenController {
 		Kitten kitty = kittenDao.nameKitten(fName, lName);
 		
 		// create random number generator for placekitten link
-		long hgt = Math.round((1000 * (Math.random())));
-		long wth = Math.round((1000 * (Math.random())));
+		long hgt = Math.round((100 * (2 + (int)(Math.random() * ((10 - 2) + 1)))));
+		long wth = Math.round((100 * (2 + (int)(Math.random() * ((10 - 2) + 1)))));
 		String url = "http://placekitten.com/" + hgt + "/" + wth; 
 		
 		ModelAndView mv = new ModelAndView();
