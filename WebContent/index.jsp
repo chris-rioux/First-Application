@@ -109,7 +109,7 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Chris Rioux Development 2016</p>
+                    <p>Copyright &copy; <a href="www.chrisriouxdevelopment.com">Chris Rioux Development 2016</a></p>
                 </div>
             </div><!-- /.row -->
         </footer>
