@@ -46,7 +46,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="https://www.linkedin.com/in/chris-rioux-b500569a" target="_blank">About</a>
+                        <a href="https://www.linkedin.com/in/chrisrioux" target="_blank">About</a>
                     </li>
                     <li>
                         <a href="https://www.chrisriouxdevelopment.com" target="_blank">Contact</a>
