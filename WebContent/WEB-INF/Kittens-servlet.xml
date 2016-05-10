@@ -11,6 +11,7 @@
 	<context:component-scan base-package="controllers"/>
 	<mvc:annotation-driven/>
 
-	<bean id="dao" class="data.KittenFileDAO"/> 
-		
+	<bean id="dao" class="data.KittenFileDAO"/>
+	<bean id="exc" class="controllers.ExceptionController"></bean>
+	 	
 </beans>
