@@ -70,8 +70,8 @@
 	                	<h3 class="text-center">Time to meet <small>your new kitten... </small></h3></br>
 	                	<h1 class="text-center"> ${kitten.fName} ${kitten.lName} </h1>
 	                </div>
-		            <div class="col-lg-6 col-lg-offset-3 center-block" style="text-align:center;">
-		            	<img src="${url}"/>
+		            <div class="col-lg-6 col-lg-offset-3">
+		            	<img class="img-responsive center-block" src="${url}"/>
 			        </div>    	
             	</div>
             </div>
