@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="en">
 
@@ -40,7 +41,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="http://www.chrisriouxapplications.com/" target="_blank">Chris Rioux Applications</a>
+                <a class="navbar-brand" href="index.jsp">Kitten Namer</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -59,6 +60,25 @@
     <!-- Page Content -->
     <div class="container">
 
+	<c:choose>
+		<c:when test="${!empty kitten}">
+		<!-- Results -->
+        <div class="row">
+            <div class="col-lg-12">
+            	<div class="row">
+		            <div class="col-lg-6 col-lg-offset-3">
+	                	<h3 class="text-center">Time to meet <small>your new kitten... </small></h3></br>
+	                	<h1 class="text-center"> ${kitten.fName} ${kitten.lName} </h1>
+	                </div>
+		            <div class="col-lg-6 col-lg-offset-3 center-block" style="text-align:center;">
+		            	<img src="${url}"/>
+			        </div>    	
+            	</div>
+            </div>
+        </div><!-- /.row -->
+        </c:when>
+        
+        <c:otherwise>
         <!-- Portfolio Item Heading -->
         <div class="row">
             <div class="col-lg-12">
@@ -85,31 +105,14 @@
 				</form>
             </div>
         </div><!-- /.row -->
-        
-        <hr>
-        
-        <!-- Results -->
-        <div class="row">
-            <div class="col-lg-12">
-            	<div class="row">
-		            <div class="col-lg-6">
-	                	<h3>Time to meet <small>your new kitten... </small></h3></br>
-	                	<h1> ${kitten.fName} ${kitten.lName} </h1>
-	                </div>
-		            <div class="col-lg-6">
-		            	<img src="${url}"/>
-			        </div>    	
-            	</div>
-            </div>
-        </div><!-- /.row -->
-
-        <hr>
+        </c:otherwise>
+	</c:choose>
 
         <!-- Footer -->
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="text-center">Copyright &copy; <a href="http://www.chrisriouxapplications.com/">Chris Rioux Applications 2016</a></p>
+                    <p class="text-center">Copyright &copy; <a href="http://www.chrisriouxapplications.com/" style="color:#9D9D9D;">Chris Rioux Applications 2016</a></p>
                 </div>
             </div><!-- /.row -->
         </footer>
